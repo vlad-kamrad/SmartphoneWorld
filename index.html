@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Smartphone World</title>
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="styles/output-sass-style.css">
+    </head>
+    <body>
+        <input type="checkbox" id="switch-theme" style="display:none;" />
+        
+        <!-- navbar-dark bg-dark -->
+        <nav id="navPage" class="navbar navbar-expand-md switch-color-theme fixed-top">
+        <a class="navbar-brand switch-color-theme" href="#carousel"> Smartphone World</a>
+            <ul class="navbar-nav row">
+                <li class="nav-item active ">
+                    <a class="nav-link switch-color-theme" href="#carousel">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link switch-color-theme" href="#tablePhone">Phones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link switch-color-theme" href="#contact">Contact Us</a>
+                </li>             
+                <label for="switch-theme" class="switch nav-item">
+                    <span class="slider"></span>
+                </label>
+            </ul>   
+        </nav>
+        
+        <br><br>
+
+        <!-- Карусель -->
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="https://i1.rozetka.ua/goods/962222/samsung_galaxy_s10_6_128_gb_white_sm_g973fzwdsek_review_images_962222505.jpg">
+                </div>
+                <div class="carousel-item ">
+                    <img class="img-fluid" src="https://i2.rozetka.ua/goods/962222/samsung_galaxy_s10_6_128_gb_white_sm_g973fzwdsek_review_images_962222511.jpg">
+                </div>
+                <div class="carousel-item ">
+                    <img class="img-fluid" src="https://i1.rozetka.ua/goods/962222/samsung_galaxy_s10_6_128_gb_green_sm_g973fzgdsek_review_images_962222097.jpg">
+                </div>
+                <div class="carousel-item ">
+                    <img class="img-fluid" src="https://i2.rozetka.ua/goods/962222/samsung_galaxy_s10_plus_8_512_gb_ceramic_white_sm_g975fcwgsek_review_images_962222427.jpg">
+                </div>
+                        <!-- Элементы управления -->
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Undo</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Таблица с телефонами -->
+        <table id="tablePhone" class="container">
+                <tbody>
+                    <tr class="row align-items-center">
+                        <td class="col-md-4 item-table">
+                            <img class="col-sm-9" src="https://i2.rozetka.ua/goods/6845976/xiaomi_redmi_6a_2_16gb_black_images_6845976742.jpg" />
+                        </td>
+                        <td class="col-md-4">
+                            <b>Xiaomi Redmi 6A 2/16 Gb</b><br>
+                            Экран (5.45", IPS, 1440x720)/ MediaTek Helio A22 (2.0 ГГц)/ 
+                            основная камера: 13 Мп, фронтальная камера: 
+                            5 Мп/ RAM 2 ГБ/ 16 ГБ встроенной памяти + microSD 
+                            (до 256 ГБ)/ 3G/ LTE/ GPS/ GLONASS/ поддержка 2х SIM-карт 
+                            (Nano-SIM)/ Android 8.1 (Oreo) / 3000 мА*ч    
+                        </td>
+                        <td class="col-md-4 item-table">
+                            <span class="old-price">3 199 $</span><br>
+                            <span class="new-price">2 699 $</span><br>
+                            <button class="btn btn-info switch-color-theme">Buy now!</button>
+                        </td>
+                    </tr>
+                    <tr class="row align-items-center">
+                        <td class="col-md-4 item-table">
+                            <img class="col-sm-9" src="https://i2.rozetka.ua/goods/3005533/tp_link_neffos_c5a_tp703a21ua_images_3005533687.jpg" />
+                        </td>
+                        <td class="col-md-4">
+                            <b>TP-Link Neffos C5a</b><br>
+                            Экран (5", TN, 854x480)/ Mediatek MT6580M (1.3 ГГц)/ 
+                            основная камера: 5 Мп, фронтальная камера: 
+                            2 Мп/ RAM 1 ГБ/ 8 ГБ встроенной памяти + microSD 
+                            (до 32 ГБ)/ 3G/ GPS/ A-GPS/ поддержка 2х SIM-карт 
+                            (Micro-SIM+Normal SIM)/ Android 7.0 (Nougat) / 2300 мА*ч
+                        </td>
+                        <td class="col-md-4 item-table">
+                            <span class="old-price">1 699 $</span><br>
+                            <span class="new-price">1 499 $</span><br>
+                            <button class="btn btn-info switch-color-theme">Buy now!</button>
+                        </td>
+                    </tr>
+                    <tr class="row align-items-center">
+                        <td class="col-md-4 item-table">
+                            <img class="col-sm-9" src="https://i1.rozetka.ua/goods/6443849/xiaomi_redmi_note5_4_64gb_black_eu_images_6443849182.jpg" />
+                        </td>
+                        <td class="col-md-4">
+                            <b>Xiaomi Redmi Note 5 4/64 Gb</b><br>
+                            Экран (5.99", IPS, 2160x1080)/ Qualcomm Snapdragon 636 (1.8 ГГц)/ 
+                            основная камера: 12 Мп + 5 Мп, фронтальная камера: 
+                            13 Мп/ RAM 4 ГБ/ 64 ГБ встроенной памяти + microSD 
+                            (до 128 ГБ)/ 3G/ LTE/ GPS/ GLONASS/ поддержка 2х SIM-карт 
+                            (Nano-SIM)/ Android 8.1 (Oreo)/ 4000 мА*ч
+                        </td>
+                        <td class="col-md-4 item-table">
+                            <span class="new-price">4 699 $</span><br>
+                            <button class="btn btn-info switch-color-theme">Buy now!</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <!-- Контакты -->
+        <div class="container">
+            <h4 class="text-center" id="contact">Contact us</h4>
+            <div class="row">
+                <div class="col-md-4">
+                            <p>Dnipro, Ukraine</p>
+                            <p>Phone: +380988589470</p>
+                            <p>Email: stupaev.vlad@gmail.com</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" placeholder="Name" id="name" required type="text">
+                        </div>
+                        <div class="col-sm-6">
+                            <input class="form-control" placeholder="Email" id="email" required type="email">
+                        </div>
+                    </div>
+                    <textarea class="form-control" name="comments" id="comments" rows="5" placeholder="Comments" required></textarea>
+                    <br>
+                    <div class="form-group">
+                        <button class="btn switch-color-theme" type="submit" data-toggle="modal" data-target="#modal-window">Send</button>
+                    </div>
+
+                    <!-- Modal window -->
+                    <div id="modal-window" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Thank you for joining us!</h4>
+                                    <button class="btn btn-default switch-color-theme" data-dismiss="modal">x</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Footer -->
+        <footer class="text-center switch-color-theme">
+            <span>Developed by Vladislav Stupaev</span>
+            <a href="#carousel" data-toggle="tooltip" class="btn">To top</a>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

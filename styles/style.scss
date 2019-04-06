@@ -1,0 +1,100 @@
+// Switch colors
+$switch-color-1: white;
+$switch-color-2: rgb(99, 148, 240);
+$switch-color-3: rgb(155, 155, 155);
+
+// Theme colors
+$first-color:green;
+$first-color-helper:white;
+$second-color:orange;
+$second-color-helper:black;
+
+.switch{
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    background-color:$switch-color-3;
+}
+
+.slider{
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: $switch-color-1;
+}
+
+@mixin color-theme($color1, $color2) {
+    background-color: $color1;
+    color: $color2;    
+}
+
+// Default 'first-color' theme
+.switch-color-theme{
+    @include color-theme($first-color,$first-color-helper);
+}
+
+// Triger
+#switch-theme:checked {
+    
+    // Change color theme
+    ~ * .switch-color-theme{
+        @include color-theme($second-color, $second-color-helper);    
+        border:none;
+    }
+
+    ~ footer{
+        @include color-theme($second-color, $second-color-helper);
+    }
+
+    ~ nav{
+        @include color-theme($second-color, $second-color-helper);
+    }
+
+    // Change color switch
+    ~ * .switch{
+        background-color: $switch-color-2;
+        .slider {
+            left: 25px;    
+        }
+    }
+}
+
+// Other
+.item-table{
+    text-align:center;
+}
+
+.old-price{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    font-size: x-large;
+}
+
+.new-price{
+    color: red;
+    font-size: xx-large;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+}
+
+footer{
+    padding: 32px;
+    width: 100%;
+    max-width: 100%;
+}
+
+td{
+    padding-top: 15px;
+    padding-bottom: 15px
+}

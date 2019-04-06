@@ -1,0 +1,79 @@
+.switch {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #9b9b9b;
+}
+
+.slider {
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.switch-color-theme {
+  background-color: green;
+  color: white;
+}
+
+#switch-theme:checked ~ * .switch-color-theme {
+  background-color: orange;
+  color: black;
+  border: none;
+}
+#switch-theme:checked ~ footer {
+  background-color: orange;
+  color: black;
+}
+#switch-theme:checked ~ nav {
+  background-color: orange;
+  color: black;
+}
+#switch-theme:checked ~ * .switch {
+  background-color: #6394f0;
+}
+#switch-theme:checked ~ * .switch .slider {
+  left: 25px;
+}
+
+.item-table {
+  text-align: center;
+}
+
+.old-price {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  font-size: x-large;
+}
+
+.new-price {
+  color: red;
+  font-size: xx-large;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%;
+}
+
+footer {
+  padding: 32px;
+  width: 100%;
+  max-width: 100%;
+}
+
+td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*# sourceMappingURL=output-sass-style.css.map */
